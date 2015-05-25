@@ -1,0 +1,23 @@
+.topSlider
+  .flex-container
+    .flexslider
+      / .slides
+      .flex-viewport
+        %ul.slides
+          - 4.times do
+            %li.clone{"aria-hidden" => "true"}
+              .div-image{:style => "background-image: url(assets/jeruza/img/estadio.jpg)"}
+              .flex-caption.Red{"data-countdown-timer" => "", "data-countdown-timer-hour" => "", "data-countdown-timer-minutes" => ""}
+                %a.explore{:href => "#"} #associações
+                .latestDate
+                  1 Mês atrás
+                %h3 Recadastramento das associações
+                %p CODHAB inicia processo de recadastramento de entidades e associações. Agende seu atendimento pelo site ou pelo 156
+                %hr
+                  .block-left
+                    %a.sliderLink{:href => "./single.html"} Leia Mais         
+    .controlWrapper
+      %ul.custom-controls
+        - 4.times do
+          %li
+            %a{:href => "./single.html", :title => "teste"} Associações

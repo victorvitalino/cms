@@ -1,0 +1,17 @@
+.container.main.homeLatest
+  %h2 Últimas Notícias
+  - 3.times do 
+    .five.columns.sidebar.bloco-noticia{:style => "height: 494px;"}
+      .imgWrapper
+        %a.with-fallback{"data-fallback" => "post-image_296_144_int_s_c1.jpg", :href => "./noticia_1.php"}
+          %img{:src => "post-image_296_144_int_s_c1.jpg"}/
+      .latestHeader
+        %a.council{:href => "./noticia_1.php", :style => "color:#147EA1"} #Serviços
+        .latestDate 7 horas atrás
+      %h3
+        %a{"aria-label" => "Posters &amp; Signs", :href => "./noticia_1.php"} Gestores do governo se reúnem no Posto de Assistência Técnica do Sol Nascente
+      %p
+        A diretoria da Companhia de Desenvolvimento Habitacional do Distrito Federal (Codhab) voltou a se reunir, nesta sexta-feira, 
+        no posto de assistência técnica do Setor Habitacional Sol Nascente para tratar das obras de instalação da rede de drenagem e da construção das 10 bacias de contenção ...
+      %p.bt-noticia
+        %a.sliderLink{:href => "./noticia_1.php"} Leia Mais

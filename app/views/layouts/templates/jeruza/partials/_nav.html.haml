@@ -1,0 +1,221 @@
+.mobile-wrap
+  .all-nav-wrap
+    #top-nav.nomobile{:tabindex => "0"}
+      .container
+        .sixteen.columns
+          %nav.blue-bar-nav{"aria-label" => "top nav", :role => "navigation"}
+            %ul
+              %li
+                %a{:href => "http://www.df.gov.br", :target => "_Blank"} Portal Brasília
+              %li
+                %a{:href => "./home.php"} CODHAB
+                %ul#nav-sub-1
+                  %li.first
+                    %a{:href => "./companhia.php"} A Companhia
+                    %ul
+                      %li
+                        %a{:href => "./historia.php"} História
+                      %li
+                        %a{:href => "./missao.php"} Missão
+                      %li
+                        %a{:href => "./visao.php"} Visão
+                      %li
+                        %a{:href => "./valores.php"} Valores
+                  %li
+                    %a{:href => "#"} Organização
+                    %ul#nav-sub-2
+                      %li.first
+                        %a{:href => "#"} Organograma
+                      %li
+                        %a{:href => "./diretoria_executiva.php"} Diretoria Executiva
+                      %li
+                        %a{:href => "#"} Assessorias
+                  %li
+                    %a{:href => "#"} Conselhos
+                    %ul#nav-sub-3
+                      %li.first
+                        %a{:href => "#"} Administrativo
+                      %li
+                        %a{:href => "#"} Fiscal
+                  %li
+                    %a{:href => "#"} Documentos
+                    %ul#nav-sub-4
+                      %li.first
+                        %a{:href => "#"} Estatuto Social
+                      %li
+                        %a{:href => "#"} Regimento Interno
+                      %li
+                        %a{:href => "#"} Resoluções
+              %li
+                %a{:href => "#"} Imprensa
+                %ul#nav-sub-5
+                  %li
+                    %ul
+                      %li.first
+                        %a{:href => "#"} Notícias
+                      %li
+                        %a{:href => "#"} Vídeos
+                      %li
+                        %a{:href => "#"} Mídias Sociais
+              %li
+                %a{:href => "#"} Dúvidas Frequentes
+              %li
+                %a{:href => "#"} Legislação
+              %li
+                %a{:href => "#"} Baixe o APP
+              %li
+                %a{:href => "#"} Fale Conosco
+                %ul#nav-sub-7
+                  %li.first
+                    %a{:href => "#"} Telefone
+                    %ul
+                      %li
+                        %a{:href => "#"} 156
+                  %li.first
+                    %a{:href => "#"} Postos de Atendimento
+                    %ul
+                      %li
+                        %a{:href => "#"} Setor Comercial Sul, Quadra 06, Lotes 13/14, Bloco A, 5º Andar - Edifício SEDHAB
+                  %li.first
+                    %a{:href => "#"} Ouvidoria
+                    %ul
+                      %li
+                        %a{:href => "#"} e-SIC
+                      %li
+                        %a{:href => "#"} Presencial
+    #main-menu-bar{:role => "banner", :tabindex => "0"}
+      .container
+        .sixteen.columns
+          .logo.mobilewrap
+            %a.mobile.menubutton{:alt => "ACC menu button", :href => "./home.php"}
+            %a.link-logo{:href => "./home.php"}
+              = image_tag('jeruza/img/logo_codhab.png', width: '132', class: 'nomobile')
+              = image_tag('jeruza/img/logo_codhab.png', width: '185', class: 'mobile')
+          %nav#main-menu
+            %ul
+              %li.green.main-link
+                %a{:href => "#"} Habitação
+                %ul.submenu
+                  %li.first
+                    %a{:href => "#"} Programa Morar Bem
+                    %ul.submenu-item
+                      %li.first
+                        %a{:href => "#"} Conheça o programa
+                      %li
+                        %a{:href => "#"} Documentos Necessários
+                      %li
+                        %a{:href => "#"} Agendar / Reagendar Atendimento
+                  %li.first
+                    %a{:href => "#"} Relação de Habilitados
+                    %ul.submenu-item
+                      %li.first
+                        %a{:href => "#"} Diferença entre RII e RIE
+                      %li
+                        %a{:href => "./lista_rii.php"} Lista de RII
+                      %li
+                        %a{:href => "./lista_rie.php"} Lista de RIE
+                  %li.first
+                    %a{:href => "#"} Convocados Não Habilitados
+                    %ul.submenu-item
+                      %li.first
+                        %a{:href => "#"} O que são convocados não habilitados?
+                      %li
+                        %a{:href => "#"} Lista de convocados não habilitados
+                  %li.first
+                    %a{:href => "#"} Responsabilidade social
+                    %ul.submenu-item
+                      %li.first
+                        %a{:href => "#"} Capacitação
+                      %li
+                        %a{:href => "#"} Geração de Renda
+                      %li.first
+                        %a{:href => "#"} Canal do Cidadão
+              %li.purple.main-link
+                %a{:href => "#"} Regularização
+                %ul.submenu
+                  %li.first
+                    %a{:href => "#"} Regularizou é seu
+                    %ul.submenu-item
+                      %li
+                        %a{:href => "#"} Informações
+                      %li
+                        %a{:href => "#"} Cadastro
+                      %li
+                        %a{:href => "#"} Agendar / Reagendar atendimento
+                  %li.first
+                    %a{:href => "#"} Cidades Consolidadas
+                    %ul.submenu-item
+                      %li
+                        %a{:href => "#"} Andamento de sua localidade
+                      %li
+                        %a{:href => "#"} Critérios de Habilitação
+                      %li
+                        %a{:href => "#"} Documentos Necessários
+                  %li.first
+                    %a{:href => "#"} Parcelamentos Informais
+                    %ul.submenu-item
+                      %li
+                        %a{:href => "#"} Andamento de sua localidade
+                      %li
+                        %a{:href => "#"} Critérios de Habilitação
+                      %li
+                        %a{:href => "#"} Documentos Necessários
+              %li.orange.main-link
+                %a{:href => "#"} Associações
+                %ul.submenu
+                  %li.first
+                    %a{:href => "#"} Informações
+                    %ul.submenu-item
+                      %li
+                        %a{:href => "#"} Sobre o programa
+                      %li
+                        %a{:href => "#"} Entidades e associações cadastradas
+                      %li
+                        %a{:href => "#"} Pré-requisitos para cadastramento de entidade / associação
+                  %li.first
+                    %a{:href => "#"} Atendimento
+                    %ul.submenu-item
+                      %li
+                        %a{:href => "#"} Cadastro
+                      %li
+                        %a{:href => "#"} Agendar / Reagendar atendimento
+                  %li.first
+                    %a{:href => "#"} Editais
+                    %ul.submenu-item
+                      %li
+                        %a{:href => "#"} Credenciamento
+                      %li
+                        %a{:href => "#"} Chamamento
+              %li.blue.main-link
+                %a{:href => "#"} Serviços
+                %ul.submenu
+                  %li#nav-sub-1001.first
+                    %ul.submenu-item
+                      %li
+                        %a{:href => "#"} Escrituras
+                      %li#nav-sub-1002.first
+                        %a{:href => "#"} Emitir Boletos
+                      %li#nav-sub-1003
+                        %a{:href => "#"} Emitir Certidão Positiva
+                      %li#nav-sub-1004
+                        %a{:href => "#"} Validar Certidão Positiva
+                      %li#nav-sub-1005
+                        %a{:href => "#"} Verificar Processo
+              %li.purple.main-link
+                %a{:href => "#"} Licitações
+                %ul.submenu
+                  %li.first
+                    %ul.submenu-item
+                      %li
+                        %a{:href => "#"} Equipamentos e Materiais
+                      %li
+                        %a{:href => "#"} Obras e Serviços
+                %li.grey.main-link
+                  %a{:href => "#"} Concursos
+                  %ul.submenu
+                    %li.first
+                      %ul.submenu-item
+                        %li
+                          %a{:href => "#"} Logo CODHAB
+                        %li
+                          %a{:href => "#"} Projetos Habitacionais

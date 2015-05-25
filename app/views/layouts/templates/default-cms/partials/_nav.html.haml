@@ -1,0 +1,24 @@
+%header.header
+  .container
+    %nav.navbar.navbar-inverse{:role => "navigation"}
+      .navbar-header
+        %button#nav-toggle.navbar-toggle{"data-target" => "#main-nav", "data-toggle" => "collapse", :type => "button"}
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        = link_to "<b>Gerenciador de conteúdo</b>".html_safe, cms_root_path, class: 'navbar-brand scroll-top logo'
+      / /.navbar-header
+      #main-nav.collapse.navbar-collapse
+        %ul#mainNav.nav.navbar-nav
+          %li
+            = link_to 'nova postagem', new_cms_post_path
+          %li
+            = link_to 'posts', cms_posts_path
+          %li
+            = link_to 'páginas', cms_pages_path
+          %li
+            %a.scroll-link{:href => "#skills"} Configurações
+          %li
+            %a.scroll-link{:href => "#experience"} Sair
+          

@@ -1,0 +1,17 @@
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Extranet
+    = stylesheet_link_tag 'default-cms', media: 'all'
+    = csrf_meta_tags
+  %body
+    = render 'layouts/templates/default-cms/partials/nav'
+    %section#introText
+      .container{style: 'padding-top: 60px'}
+        = yield
+    .modal.fade#modal
+      .modal-dialog
+        .modal-content
+    
+    = javascript_include_tag 'default-cms', media: 'all'
+

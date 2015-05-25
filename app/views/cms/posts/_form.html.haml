@@ -1,0 +1,19 @@
+= simple_form_for [:cms, @post] do |f|
+  .row
+    .col-md-3
+      = f.association :post_category, prompt: 'selecione...'
+      = f.hint link_to 'nova categoria', new_cms_post_category_path, remote: true, class: 'btn btn-danger btn-xs'
+  .row
+    .col-md-12
+      = f.input :title 
+  .row
+    .col-md-12
+      = f.input :content, input_html: {class: 'redactor'}
+  .row
+    .col-md-2
+      = f.input :publish, as: 'select', prompt: 'selecione...'
+  %hr/
+  .row
+    .col-md-2
+      = f.button :submit, class: 'btn btn-lg btn-danger'
+

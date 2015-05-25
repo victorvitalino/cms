@@ -1,0 +1,29 @@
+#footer
+  .star-footer
+  .container
+    .social.sixteen.columns
+    .sixteen.columns
+      .five.columns.contact-form.alpha
+        = image_tag('jeruza/img/logo_codhab.png', class: 'logo_footer')
+      .five.columns
+        %h3 Últimas Notícias
+        .footer-box
+          - 3.times do 
+            .noticias-footer
+              %p
+                %a{"aria-label" => "address"} Codhab promove atividades no Sol Nascente
+              %p 1 dia atrás
+      .five.columns.omega
+        %h3 Entre em Contato
+        .footer-box
+          %p
+            %span{"aria-label" => "address"}
+              Edifício SEDHAB - Setor Comercial Sul
+              %br
+                Quadra 06, Bloco A - Lotes 12/13 - Térreo.
+                %br
+                  Brasília/DF
+          %h3 Central de Atendimento
+          %p
+            %span{"aria-label" => "address"}
+              156 opção 5. Das 7h às 19h

@@ -1,0 +1,11 @@
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Extranet
+    = stylesheet_link_tag 'jeruza', media: 'all'
+    = javascript_include_tag 'jeruza', media: 'all'
+    = csrf_meta_tags
+  %body
+    = render 'layouts/templates/jeruza/partials/nav'
+    = yield
+    = render 'layouts/templates/jeruza/partials/footer'

@@ -1,0 +1,38 @@
+.row
+  %h1
+    %b
+      Posts
+    %span.pull-right
+      = link_to "<b>categorias de post</b>".html_safe, cms_post_categories_path, class: 'btn btn-warning'
+      = link_to "<b>novo post</b>".html_safe, new_cms_post_path, class: 'btn btn-danger'
+  %br/
+.row
+  %table.table.table-condensed.table-striped
+    %thead
+      %tr
+        %th #
+        %th título
+        %th categoria
+        %th status
+        %th criando em
+        %th ações
+    %tbody
+      - @posts.each_with_index do |p, i|
+        %tr
+          %td.col-md-1
+            = i + 1
+          %td.col-md-4
+            = p.title
+          %td.col-md-2
+            = p.post_category.name if p.post_category.present?
+          %td.col-md-2
+            - if p.publish
+              %span.label.label-success publicado 
+            - else
+              %span.label.label-default não publicado
+          %td.col-md-1
+            = p.created_at.strftime('%d/%m/%Y')
+          %td.col-md-3
+            = link_to "", cms_post_path(p), class: 'btn btn-danger fa fa-share'
+            = link_to "", edit_cms_post_path(p), class: 'btn btn-danger fa fa-pencil'
+            = link_to "", cms_post_path(p), method: :delete, data: { data_confirm: "tem certeza que deseja excluir?"},class: 'btn btn-danger fa fa-times'
