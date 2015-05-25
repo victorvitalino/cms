@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require neu/js/bootstrap.min
 //= require redactor-rails
 //= require redactor-rails/langs/pt_br
 //= require redactor-rails/plugins

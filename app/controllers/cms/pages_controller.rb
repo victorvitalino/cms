@@ -46,11 +46,11 @@ module Cms
 		private
 
 		def set_params
-			params.require(:page).permit(:title)
+			params.require(:page).permit(:title,:content, :publish,:page_category_id)
 		end
 
-		def set_post
-			@page = Page.find(params[:id])
+		def set_page
+			@page = Page.friendly.find(params[:id])
 		end
 	end
 end

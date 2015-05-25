@@ -12,6 +12,8 @@
       %tr
         %th #
         %th título
+        %th link
+        %th categoria
         %th status
         %th criando em
         %th ações
@@ -20,15 +22,19 @@
         %tr
           %td.col-md-1
             = i + 1
-          %td.col-md-4
-            = p.name
           %td.col-md-2
-            - if p.status
+            = p.page_category.name if p.page_category.present?
+          %td.col-md-3
+            = p.title
+          %td.col-md-2
+            = p.slug
+          %td.col-md-2
+            - if p.publish
               %span.label.label-success ativa 
             - else
               %span.label.label-default inativa
           %td.col-md-1
             = p.created_at.strftime('%d/%m/%Y')
-          %td.col-md-1
-            = link_to "", edit_cms_post_category_path(p), class: 'btn btn-danger fa fa-pencil'
-            = link_to "", cms_post_category_path(p), method: :delete, data: { data_confirm: "tem certeza que deseja excluir?"},class: 'btn btn-danger fa fa-times'
+          %td.col-md-2
+            = link_to "", edit_cms_page_path(p), class: 'btn btn-danger fa fa-pencil'
+            = link_to "", cms_page_path(p), method: :delete, data: { data_confirm: "tem certeza que deseja excluir?"},class: 'btn btn-danger fa fa-times'

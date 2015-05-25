@@ -1,0 +1,5 @@
+= simple_form_for [:cms, @page_category], remote: request.xml_http_request? do |f| 
+  = f.input :name
+  = f.input :status, as: :select, prompt: 'selecione...'
+  %br/
+  = f.button :submit, class: 'btn btn-danger'
