@@ -8,59 +8,59 @@
               %li
                 %a{:href => "http://www.df.gov.br", :target => "_Blank"} Portal Brasília
               %li
-                %a{:href => "./home.php"} CODHAB
+                %a{:href => "./"} CODHAB
                 %ul#nav-sub-1
                   %li.first
-                    %a{:href => "./companhia.php"} A Companhia
+                    %a{:href => "#"} A Companhia
                     %ul
                       %li
-                        %a{:href => "./historia.php"} História
+                        = link_nav_to 'História', 'geral'
                       %li
-                        %a{:href => "./missao.php"} Missão
+                        = link_nav_to 'Missão', 'geral'
                       %li
-                        %a{:href => "./visao.php"} Visão
+                        = link_nav_to 'Visão', 'geral'
                       %li
-                        %a{:href => "./valores.php"} Valores
+                        = link_nav_to 'Valores', 'geral'
                   %li
                     %a{:href => "#"} Organização
                     %ul#nav-sub-2
                       %li.first
-                        %a{:href => "#"} Organograma
+                        = link_nav_to 'Organograma', 'geral'
                       %li
-                        %a{:href => "./diretoria_executiva.php"} Diretoria Executiva
+                        = link_nav_to 'Diretoria Executiva', 'geral'
                       %li
-                        %a{:href => "#"} Assessorias
+                        = link_nav_to 'Assessorias', 'geral'
                   %li
                     %a{:href => "#"} Conselhos
                     %ul#nav-sub-3
                       %li.first
-                        %a{:href => "#"} Administrativo
+                        = link_nav_to 'Administrativo', 'geral'
                       %li
-                        %a{:href => "#"} Fiscal
+                        = link_nav_to 'Fiscal', 'geral'
                   %li
                     %a{:href => "#"} Documentos
                     %ul#nav-sub-4
                       %li.first
-                        %a{:href => "#"} Estatuto Social
+                        = link_nav_to 'Estatuto Social', 'geral'
                       %li
-                        %a{:href => "#"} Regimento Interno
+                        = link_nav_to 'Regimento Interno', 'geral'
                       %li
-                        %a{:href => "#"} Resoluções
+                        = link_nav_to 'Resoluções', 'geral'
               %li
                 %a{:href => "#"} Imprensa
                 %ul#nav-sub-5
                   %li
                     %ul
                       %li.first
-                        %a{:href => "#"} Notícias
+                        = link_nav_to 'Notícias', 'geral'
                       %li
-                        %a{:href => "#"} Vídeos
+                        = link_nav_to 'Vídeos', 'geral'
                       %li
-                        %a{:href => "#"} Mídias Sociais
+                        = link_nav_to 'Mídias Sociais', 'geral'
               %li
-                %a{:href => "#"} Dúvidas Frequentes
+                = link_nav_to 'Dúvidas Frequentes', 'geral'
               %li
-                %a{:href => "#"} Legislação
+                = link_nav_to 'Legislação', 'geral'
               %li
                 %a{:href => "#"} Baixe o APP
               %li
@@ -87,8 +87,8 @@
       .container
         .sixteen.columns
           .logo.mobilewrap
-            %a.mobile.menubutton{:alt => "ACC menu button", :href => "./home.php"}
-            %a.link-logo{:href => "./home.php"}
+            %a.mobile.menubutton{:alt => "ACC menu button", :href => "#"}
+            %a.link-logo{:href => "#"}
               = image_tag('jeruza/img/logo_codhab.png', width: '132', class: 'nomobile')
               = image_tag('jeruza/img/logo_codhab.png', width: '185', class: 'mobile')
           %nav#main-menu
@@ -100,36 +100,27 @@
                     %a{:href => "#"} Programa Morar Bem
                     %ul.submenu-item
                       %li.first
-                        = link_nav_to 'Conheça o Programa', 'morarbem'
+                        = link_nav_to 'Conheça o Programa', 'habitacao'
                       %li
-                        %a{:href => "#"} Documentos Necessários
+                        = link_nav_to 'Documentos Necessários', 'habitacao'
                       %li
-                        %a{:href => "#"} Agendar / Reagendar Atendimento
+                        = link_nav_to 'Agendar / Reagendar Atendimento', 'habitacao'
                   %li.first
                     %a{:href => "#"} Relação de Habilitados
                     %ul.submenu-item
                       %li.first
-                        %a{:href => "#"} Diferença entre RII e RIE
+                        = link_nav_to 'Diferença entre RII e RIE', 'habitacao'
                       %li
-                        %a{:href => "./lista_rii.php"} Lista de RII
+                        = link_nav_to 'Lista de RII', 'habitacao'
                       %li
-                        %a{:href => "./lista_rie.php"} Lista de RIE
+                        = link_nav_to 'Lista de RIE', 'habitacao'
                   %li.first
                     %a{:href => "#"} Convocados Não Habilitados
                     %ul.submenu-item
                       %li.first
-                        %a{:href => "#"} O que são convocados não habilitados?
+                        = link_nav_to 'O que são convocados não habilitados?', 'habitacao'
                       %li
-                        %a{:href => "#"} Lista de convocados não habilitados
-                  %li.first
-                    %a{:href => "#"} Responsabilidade social
-                    %ul.submenu-item
-                      %li.first
-                        %a{:href => "#"} Capacitação
-                      %li
-                        %a{:href => "#"} Geração de Renda
-                      %li.first
-                        %a{:href => "#"} Canal do Cidadão
+                        = link_nav_to 'Lista de convocados não habilitados', 'habitacao'
               %li.purple.main-link
                 %a{:href => "#"} Regularização
                 %ul.submenu
@@ -137,29 +128,29 @@
                     %a{:href => "#"} Regularizou é seu
                     %ul.submenu-item
                       %li
-                        %a{:href => "#"} Informações
+                        = link_nav_to 'Informações', 'regularizacao'
                       %li
-                        %a{:href => "#"} Cadastro
+                        = link_nav_to 'Cadastro', 'regularizacao'
                       %li
-                        %a{:href => "#"} Agendar / Reagendar atendimento
+                        = link_nav_to 'Agendar / Reagendar atendimento', 'regularizacao'
                   %li.first
                     %a{:href => "#"} Cidades Consolidadas
                     %ul.submenu-item
                       %li
-                        %a{:href => "#"} Andamento de sua localidade
+                        = link_nav_to 'Andamento de sua localidade', 'regularizacao'
                       %li
-                        %a{:href => "#"} Critérios de Habilitação
+                        = link_nav_to 'Critérios de Habilitação', 'regularizacao'
                       %li
-                        %a{:href => "#"} Documentos Necessários
+                        = link_nav_to 'Documentos Necessários', 'regularizacao'
                   %li.first
                     %a{:href => "#"} Parcelamentos Informais
                     %ul.submenu-item
                       %li
-                        %a{:href => "#"} Andamento de sua localidade
+                        = link_nav_to 'Andamento de sua localidade', 'parcelamentos_informais'
                       %li
-                        %a{:href => "#"} Critérios de Habilitação
+                        = link_nav_to 'Critérios de Habilitação', 'parcelamentos_informais'
                       %li
-                        %a{:href => "#"} Documentos Necessários
+                        = link_nav_to 'Documentos Necessários', 'parcelamentos_informais'
               %li.orange.main-link
                 %a{:href => "#"} Associações
                 %ul.submenu
@@ -167,55 +158,60 @@
                     %a{:href => "#"} Informações
                     %ul.submenu-item
                       %li
-                        %a{:href => "#"} Sobre o programa
+                        = link_nav_to 'Sobre o programa', 'Associacoes'
                       %li
-                        %a{:href => "#"} Entidades e associações cadastradas
+                        = link_nav_to 'Entidades e associações cadastradas', 'Associacoes'
                       %li
-                        %a{:href => "#"} Pré-requisitos para cadastramento de entidade / associação
+                        = link_nav_to 'Pré-requisitos para cadastramento de entidade / associação', 'Associacoes'
                   %li.first
                     %a{:href => "#"} Atendimento
                     %ul.submenu-item
                       %li
-                        %a{:href => "#"} Cadastro
+                        = link_nav_to 'Cadastro', 'Associacoes'
                       %li
-                        %a{:href => "#"} Agendar / Reagendar atendimento
-                  %li.first
-                    %a{:href => "#"} Editais
-                    %ul.submenu-item
-                      %li
-                        %a{:href => "#"} Credenciamento
-                      %li
-                        %a{:href => "#"} Chamamento
+                        = link_nav_to 'Agendar / Reagendar atendimento', 'Associacoes'
               %li.blue.main-link
                 %a{:href => "#"} Serviços
                 %ul.submenu
                   %li#nav-sub-1001.first
                     %ul.submenu-item
                       %li
-                        %a{:href => "#"} Escrituras
+                        = link_nav_to 'Escrituras', 'Servicos'
                       %li#nav-sub-1002.first
-                        %a{:href => "#"} Emitir Boletos
+                        = link_nav_to 'Emitir Boletos', 'Servicos'
                       %li#nav-sub-1003
-                        %a{:href => "#"} Emitir Certidão Positiva
+                        = link_nav_to 'Emitir Certidão Positiva', 'Servicos'
                       %li#nav-sub-1004
-                        %a{:href => "#"} Validar Certidão Positiva
+                        = link_nav_to 'Validar Certidão Positiva', 'Servicos'
                       %li#nav-sub-1005
-                        %a{:href => "#"} Verificar Processo
+                        = link_nav_to 'Verificar Processo', 'Servicos'
+                      %li.first
+                        = link_nav_to 'Capacitação', 'Servicos'
+                      %li
+                        = link_nav_to 'Geração de Renda', 'Servicos'
+                      %li.first
+                        = link_nav_to 'Canal do Cidadão', 'Servicos'
               %li.purple.main-link
-                %a{:href => "#"} Licitações
+                %a{:href => "#"} Editais
                 %ul.submenu
                   %li.first
                     %ul.submenu-item
                       %li
-                        %a{:href => "#"} Equipamentos e Materiais
+                        = link_nav_to 'Equipamentos e Materiais', 'Editais'
                       %li
-                        %a{:href => "#"} Obras e Serviços
+                        = link_nav_to 'Obras e Serviços', 'Editais'
+                      %li
+                        = link_nav_to 'Credenciamento', 'Editais'
+                      %li
+                        = link_nav_to 'Chamamento', 'Editais'
                 %li.grey.main-link
                   %a{:href => "#"} Concursos
                   %ul.submenu
                     %li.first
                       %ul.submenu-item
                         %li
-                          %a{:href => "#"} Logo CODHAB
+                          = link_nav_to 'O que são?', 'Concursos'
                         %li
-                          %a{:href => "#"} Projetos Habitacionais
+                          = link_nav_to 'Logo CODHAB', 'Concursos'
+                        %li
+                          = link_nav_to 'Projetos Habitacionais', 'Concursos'

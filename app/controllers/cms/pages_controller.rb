@@ -6,6 +6,7 @@ module Cms
 		
 		def index
 			@pages = Page.all
+			#render :json => @pages
 		end
 
 		def new

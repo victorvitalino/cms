@@ -10,8 +10,19 @@
     .col-md-12
       = f.input :content, input_html: {class: 'redactor'}
   .row
+    .col-md-12
+      = f.label :thumb
+      = f.file_field :thumb
+  .row
+    .col-md-12
+      = f.label :slider
+      = f.file_field :slider
+  .row
     .col-md-2
       = f.input :publish, as: 'select', prompt: 'selecione...'
+  .row
+    .col-md-2
+      = f.input :feature, as: 'select', prompt: 'selecione...'
   %hr/
   .row
     .col-md-2

@@ -4,20 +4,23 @@
       / .slides
       .flex-viewport
         %ul.slides
-          - 4.times do
+          - slider_each('slider', 4,'DESC') do |s|
             %li.clone{"aria-hidden" => "true"}
-              .div-image{:style => "background-image: url(assets/jeruza/img/estadio.jpg)"}
+              .div-image{:style => "background-image: url(#{s.slider})"}
               .flex-caption.Red{"data-countdown-timer" => "", "data-countdown-timer-hour" => "", "data-countdown-timer-minutes" => ""}
-                %a.explore{:href => "#"} #associações
+                %a.explore{:href => "#"} 
+                = "##{s.post_category.name}"
                 .latestDate
-                  1 Mês atrás
-                %h3 Recadastramento das associações
-                %p CODHAB inicia processo de recadastramento de entidades e associações. Agende seu atendimento pelo site ou pelo 156
+                  = s.created_at.strftime('%d/%m/%Y')
+                %h3
+                  = s.title
+                %p 
+                  = s.content.html_safe
                 %hr
                   .block-left
                     %a.sliderLink{:href => "./single.html"} Leia Mais         
     .controlWrapper
       %ul.custom-controls
-        - 4.times do
+        - slider_each('slider', 4,'DESC') do |s|
           %li
-            %a{:href => "./single.html", :title => "teste"} Associações
+            = link_to "#{s.title}", content_post_path(s)
