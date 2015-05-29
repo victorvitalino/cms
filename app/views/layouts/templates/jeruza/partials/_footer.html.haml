@@ -8,11 +8,12 @@
       .five.columns
         %h3 Últimas Notícias
         .footer-box
-          - 3.times do 
+          - post_each('morarbem', 3, 'DESC') do |p|
             .noticias-footer
               %p
-                %a{"aria-label" => "address"} Codhab promove atividades no Sol Nascente
-              %p 1 dia atrás
+                = link_to p.title, content_post_path(p)
+              %p 
+                = p.created_at.strftime('%d/%m/%Y')
       .five.columns.omega
         %h3 Entre em Contato
         .footer-box

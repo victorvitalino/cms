@@ -20,7 +20,14 @@ Rails.application.routes.draw do
     
     resources :page_categories
     resources :pages
-        
+       
+  end
+
+  namespace :morarbem, path: '/morarbem' do
+
+    get 'rii', to: 'rii#index'
+    get 'rie', to: 'rie#index'
+
   end
 
 end

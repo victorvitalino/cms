@@ -68,3 +68,9 @@
   #nav-sub-6{width: 120px!important; height: 115px!important;}
   #nav-sub-7{width: 530px!important;height: 200px!important;}
   .homeLatestWrapper{padding-bottom: 0px!important;}
+
+/*  @media (min-width: 1200px){
+  .container {
+    max-width: 1200px!important;
+  }
+}*/
