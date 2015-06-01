@@ -1,0 +1,8 @@
+pt-BR:
+ activerecord:
+  models:
+   post_category: 'Categoria de postagem'
+  attributes:
+   post_category:
+    name: 'título'
+    status: 'ativa?'

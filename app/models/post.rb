@@ -3,7 +3,7 @@ class Post < ActiveRecord::Base
   belongs_to :post_category
 
 
-  validates_presence_of :post_category, :title, :content
+  validates_presence_of :post_category_id, :title, :content
 
   mount_uploader :thumb, ThumbUploader
 

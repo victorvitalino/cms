@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   mount RedactorRails::Engine => '/redactor_rails'
   namespace :cms, path: 'conteudo' do 
-    root 'dashboard#index'
+    root 'pages#index'
     resources :posts, path: 'postagens'
     resources :post_categories, path: 'postagem_categorias'
     

@@ -1,8 +1,8 @@
 module ApplicationHelper
 
 	def link_nav_to(title, category,*html) 
-		@category = PageCategory.find_by_name(category)
-    	@page = Page.find_by(:title => title, :page_category_id => @category)
+		  @category = PageCategory.find_by_name(category)
+    	@page = Page.friendly.find_by(:title => title)
     
    		link_to "#{title}", content_page_path(@page) if @page.present?
 	end

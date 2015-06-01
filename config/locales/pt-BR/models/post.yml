@@ -1,0 +1,13 @@
+pt-BR:
+ activerecord:
+  models:
+   post: 'Postagem'
+  attributes:
+   post:
+    title: 'título'
+    content: 'conteúdo'
+    post_category: 'categoria'
+    thumb: 'imagem'
+    slider: 'imagem rotativa'
+    publish: 'publicada?'
+    feature: 'rotativa?'

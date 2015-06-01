@@ -16,3 +16,9 @@
 //= require redactor-rails
 //= require redactor-rails/langs/pt_br
 //= require redactor-rails/plugins
+//= require dataTables/jquery.dataTables
+//= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
+
+$(document).ready(function() {
+  $('.datatables').DataTable();
+})

@@ -2,4 +2,5 @@
 
 *= require jeruza/css/style
 *= require jeruza/css/mod
+*= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
 */

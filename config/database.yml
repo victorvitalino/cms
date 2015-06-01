@@ -1,7 +1,20 @@
-development:
+default: &default
   adapter: postgresql
-  encoding: utf8
-  database: codhab_site
+  encoding: unicode
+  host: 10.233.38.16
   username: postgres
-  password: 123456789
-  host: localhost
+  password: codhab072771472
+  pool: 5
+
+development:
+  <<: *default
+  database: site_development
+
+
+test:
+  <<: *default
+  database: agenda_development
+
+production:
+  <<: *default
+  database: agenda_development
