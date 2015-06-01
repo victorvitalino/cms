@@ -14,7 +14,7 @@ window.init_redactor = function(){
         "imageGetJson":"/redactor_rails/pictures",
         "fileUpload":"/redactor_rails/documents?" + params,
         "fileGetJson":"/redactor_rails/documents",
-        "path":"/assets/redactor-rails",
+        "path":"site/assets/redactor-rails",
         "css":"style.css",
         "lang":'pt_br'
   });
