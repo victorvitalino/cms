@@ -5,9 +5,6 @@ module ApplicationHelper
     link_to "#{title}", content_page_path(@page) if @page.present?
 	end
 
-	def link_subnav_to(title, url, *html)
-	end
-
 	def post_each(category, limit, order)
 	end
 
