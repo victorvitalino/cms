@@ -1,43 +1,16 @@
 module Content
 	class PostsController < ApplicationController
-
+		layout 'templates/jeruza/jeruza'
+		before_action :set_post, only: [:show]
 		def index
 			@post = Post.all
 		end
 
-		def new
-			@post = Post.new
-		end
-
-		def create
-			if @post.save
-				redirect_to action: 'index'
-			else
-				render action: 'new'
-			end
-		end
-
-		def edit
-		end
-
-		def update
-			if @post.update(params)
-				redirect_to action: 'index'
-			else
-				render action: 'edit'
-			end
-		end
-
-		def destroy
-			@post.destroy
+		def show
 		end
 
 		private
-
-		def params
-			params.require(:post).permit(:title)
-		end
-
+	
 		def set_post
 			@post = Post.find(params[:id])
 		end

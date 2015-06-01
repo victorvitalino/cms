@@ -4,7 +4,7 @@ class CreatePages < ActiveRecord::Migration
       t.string :title
       t.string :slug, unique: true
       t.text :content
-      t.references :page_category, index: true, foreign_key: true
+      t.references :page_category, index: true#, foreign_key: true
       t.boolean :publish
 
       t.timestamps null: false

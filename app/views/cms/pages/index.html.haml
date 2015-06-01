@@ -23,11 +23,11 @@
           %td.col-md-1
             = i + 1
           %td.col-md-2
-            = p.page_category.name if p.page_category.present?
-          %td.col-md-3
             = p.title
-          %td.col-md-2
+          %td.col-md-3
             = p.slug
+          %td.col-md-2
+            = p.page_category.name if p.page_category.present?
           %td.col-md-2
             - if p.publish
               %span.label.label-success ativa 

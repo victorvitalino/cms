@@ -23,7 +23,7 @@
             $('.bottomSlider .flexslider').flexslider({
                 animation: "slide",
                 useCSS: false,
-                animationLoop: true,
+                animationLoop: false,
                 manualControls: '.flex-control-nav li a',
                 smoothHeight: true,
                 start: function (slider) {

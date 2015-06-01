@@ -47,7 +47,7 @@ module Cms
 		private
 
 		def set_params
-			params.require(:post).permit(:title, :content, :post_category_id, :publish)
+			params.require(:post).permit(:title, :content, :post_category_id, :publish, :thumb, :slider, :feature)
 		end
 
 		def set_post
