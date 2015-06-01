@@ -41,6 +41,7 @@ namespace :pages do
     hash.each do |h|
 
       @category = PageCategory.new
+      @category.id = h['id']
       @category.name = h['name']
       @category.status = h['status']
       @category.save!
@@ -51,6 +52,7 @@ namespace :pages do
     hash.each do |h|
 
       @category = PostCategory.new
+      @category.id = h['id']
       @category.name = h['name']
       @category.status = h['status']
       @category.save!
