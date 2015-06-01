@@ -8,7 +8,7 @@ module ApplicationHelper
 
 
 	def post_each(category, limit = 10, order = 'ASC')
-    	@posts = Post.where(feature: false).limit(limit).order("created_at #{order}")
+    	@posts = Post.where('feature <> ?', true).limit(limit).order("created_at #{order}")
 
     	@posts.each do |e|
     		yield e
