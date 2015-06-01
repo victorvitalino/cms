@@ -1,15 +1,14 @@
 module ApplicationHelper
 
 	def link_nav_to(title, category,*html) 
-		  @category = PageCategory.find_by_name(category)
-    	@page = Page.friendly.find_by(:title => title)
+			@page = Page.friendly.find_by(:title => title)
     
    		link_to "#{title}", content_page_path(@page) if @page.present?
 	end
 
 
 	def post_each(category, limit = 10, order = 'ASC')
-    	@posts = Post.all.limit(limit).order("created_at #{order}")
+    	@posts = Post.where(feature: false).limit(limit).order("created_at #{order}")
 
     	@posts.each do |e|
     		yield e
