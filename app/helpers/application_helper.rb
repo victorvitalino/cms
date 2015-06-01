@@ -7,12 +7,6 @@ module ApplicationHelper
    		link_to "#{title}", content_page_path(@page) if @page.present?
 	end
 
-<<<<<<< HEAD
-	def post_each(category, limit, order)
-=======
-	def link_subnav_to(title, category)
-
-	end
 
 	def post_each(category, limit = 10, order = 'ASC')
     	@posts = Post.all.limit(limit).order("created_at #{order}")
@@ -28,7 +22,6 @@ module ApplicationHelper
 		@posts.each do |s|
 			yield s
 		end
->>>>>>> c022be734dc9b4c43c8efaf0578e3480e4e8268e
 	end
 
 
