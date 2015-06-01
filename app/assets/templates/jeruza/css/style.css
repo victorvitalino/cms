@@ -1214,11 +1214,11 @@ h2 {
 .main-content.habitacao h1.post-header {
     color: #289728
 }
-.main-content.editais h1.post-header {
+.main-content.regularizacao h1.post-header {
     color: #feaa15
 }
 
-.main-content.regularizacao h1.post-header {
+.main-content.editais h1.post-header {
     color: #7C3961
 }
 
@@ -1450,12 +1450,12 @@ ul {
 .submenu {
     background: #289728
 }
-#main-menu li.editais
+#main-menu li.regularizacao
 .submenu {
     background: #feaa15
 }
 
-#main-menu li.regularizacao
+#main-menu li.editais
 .submenu {
     background: #7c3961
 }
@@ -1689,14 +1689,14 @@ a {
     color: #147EA1
 }
 
-#main-menu .main-link.regularizacao>a {
+#main-menu .main-link.editais>a {
     color: #7c3961
 }
 
 #main-menu .main-link.concursos>a {
     color: #83847b
 }
-#main-menu .main-link.editais>a {
+#main-menu .main-link.regularizacao>a {
     color: #feaa15
 }
 #main-menu .main-link>a:hover,.main-link:hover, {
@@ -1711,7 +1711,7 @@ a {
     background: #289728
 }
 
-#main-menu .main-link.editais>a:hover {
+#main-menu .main-link.regularizacao>a:hover {
     color: #feaa15
 }
 #main-menu .main-link.entidades>a:hover {
@@ -1722,14 +1722,14 @@ a {
     background: #147EA1
 }
 
-#main-menu .main-link.regularizacao>a:hover {
+#main-menu .main-link.editais>a:hover {
     background: #7c3961
 }
 
 #main-menu .main-link.concursos>a:hover {
     background: #83847b
 }
-.main-link.editais:hover, #main-menu .main-link.editais.active {
+.main-link.regularizacao:hover, #main-menu .main-link.regularizacao.active {
 background: #feaa15
 }
 .main-link.servicos:hover, #main-menu .main-link.servicos.active {
@@ -1744,7 +1744,7 @@ background: #feaa15
     background: #f4400a
 }
 
-.main-link.regularizacao:hover, #main-menu .main-link.regularizacao.active {
+.main-link.editais:hover, #main-menu .main-link.editais.active {
     background: #7c3961
 }
 
@@ -1752,8 +1752,8 @@ background: #feaa15
     background: #83847b
 }
 
-#main-menu .main-link.regularizacao.active a,
 #main-menu .main-link.editais.active a,
+#main-menu .main-link.regularizacao.active a,
 #main-menu .main-link.servicos.active a,
 #main-menu .main-link.habitacao.active a,
 #main-menu .main-link.entidades.active a,
@@ -1779,14 +1779,14 @@ a {
     color: #fff
 }
 
-#main-menu .main-link.regularizacao .submenu>li>a {
+#main-menu .main-link.editais .submenu>li>a {
     color: #fff
 }
 
 #main-menu .main-link.concursos .submenu>li>a {
     color: #fff
 }
-#main-menu .main-link.editais .submenu>li>a {
+#main-menu .main-link.regularizacao .submenu>li>a {
     color: #fff
 }
 
@@ -1859,7 +1859,7 @@ h3 {
 h5.habitacao {
     color: #289728
 }
-h5.editais {
+h5.regularizacao {
 color: #feaa15
 }
 .sidebar
@@ -1873,7 +1873,7 @@ h5.servicos {
 }
 
 .sidebar
-h5.regularizacao {
+h5.editais {
     color: #7c3961
 }
 
@@ -1900,10 +1900,10 @@ li {
 .sidebar-menu.habitacao li.here>a {
     color: #289728 !important
 }
-.sidebar-menu.editais li.here>a {
+.sidebar-menu.regularizacao li.here>a {
 color: #feaa15 !important
 }
-.sidebar-menu.regularizacao li.here>a {
+.sidebar-menu.editais li.here>a {
     color: #7C3961 !important
 }
 
@@ -1946,7 +1946,7 @@ a {
     background: url('http://stage.acc.bl.ms/common/acc/images/sidebararrow_lightblue.png') 1% 50% no-repeat
 }
 
-.sidebar-menu.regularizacao li
+.sidebar-menu.editais li
 a {
     background: url('http://stage.acc.bl.ms/common/acc/images/sidebararrow_purple.png') 1% 50% no-repeat
 }
@@ -1966,10 +1966,10 @@ a {
     margin: 0px
 }
 .sidebar-menu.habitacao .submenu a,
-.sidebar-menu.editais .submenu a,
+.sidebar-menu.regularizacao .submenu a,
 .sidebar-menu.entidades .submenu a,
 .sidebar-menu.servicos .submenu a,
-.sidebar-menu.regularizacao .submenu a,
+.sidebar-menu.editais .submenu a,
 .sidebar-menu.concursos .submenu a,
 .sidebar-menu .submenu
 a {
@@ -2812,11 +2812,11 @@ li {
     height: 400px
 }
 
-.topSlider .flex-caption.editais {
-    background: rgba(254,170,21,0.9)
+.topSlider .flex-caption.regularizacao {
+    background: rgba(254,170,21,0.8)
 }
 
-.topSlider .flex-caption.regularizacao {
+.topSlider .flex-caption.editais {
     background: rgba(124,57,97,0.9)
 }
 
@@ -3207,9 +3207,9 @@ img {
 
 .exploreWrapper span.exploreHeading.entidades,
 .exploreWrapper span.exploreHeading.concursos,
-.exploreWrapper span.exploreHeading.regularizacao,
-.exploreWrapper span.exploreHeading.habitacao,
 .exploreWrapper span.exploreHeading.editais,
+.exploreWrapper span.exploreHeading.habitacao,
+.exploreWrapper span.exploreHeading.regularizacao,
 .exploreWrapper
 span.exploreHeading.servicos {
     color: #F4400A;
@@ -3224,12 +3224,12 @@ span.exploreHeading.concursos {
 }
 
 .exploreWrapper
-span.exploreHeading.editais{
+span.exploreHeading.regularizacao{
     color: #feaa15
 }
 
 .exploreWrapper
-span.exploreHeading.regularizacao {
+span.exploreHeading.editais {
     color: #7C3961
 }
 
@@ -3333,9 +3333,9 @@ a.searchName:hover {
 
 .largeLinksWrapper.servicos ul li ,
 .largeLinksWrapper.habitacao ul li ,
-.largeLinksWrapper.editais ul li,
+.largeLinksWrapper.regularizacao ul li,
 .largeLinksWrapper.entidades ul li ,
-.largeLinksWrapper.regularizacao ul li ,
+.largeLinksWrapper.editais ul li ,
 .largeLinksWrapper.concursos ul
 li {
     background: url(http://stage.acc.bl.ms/common/acc/images/sidebararrow_lightblue.png) no-repeat scroll 3% 50% rgba(0, 0, 0, 0);
@@ -3360,7 +3360,7 @@ li {
     background: url(http://stage.acc.bl.ms/common/acc/images/sidebararrow_orange.png) no-repeat scroll 3% 50% rgba(0, 0, 0, 0)
 }
 
-.largeLinksWrapper.regularizacao ul
+.largeLinksWrapper.editais ul
 li {
     background: url(http://stage.acc.bl.ms/common/acc/images/sidebararrow_purple.png) no-repeat scroll 3% 50% rgba(0,0,0,0)
 }
@@ -3606,7 +3606,7 @@ iframe {
         background: url('http://stage.acc.bl.ms/common/acc/images/bluecircle_large.png') no-repeat 7px center / 18px 18px
     }
 
-    #main-menu .main-link.regularizacao>a {
+    #main-menu .main-link.editais>a {
         background: url('http://stage.acc.bl.ms/common/acc/images/purplecircle_large.png') no-repeat 7px center / 18px 18px
     }
 
@@ -3782,7 +3782,7 @@ iframe {
     }
 
     .container .landingSmall .five.columns
-    h3.regularizacao {
+    h3.editais {
         background: url(http://stage.acc.bl.ms/common/acc/images/landing-arrow-small-purple-mobile.jpg) no-repeat right 10px / 32px 32px;
         min-height: 32px
     }
@@ -3811,7 +3811,7 @@ iframe {
         min-height: 32px
     }
 
-    .largeLinksWrapper.regularizacao ul
+    .largeLinksWrapper.editais ul
     li {
         background: url(http://stage.acc.bl.ms/common/acc/images/landing-arrow-small-purple-mobile.jpg) no-repeat 0px -12px / 32px 32px;
         min-height: 32px
@@ -4950,11 +4950,11 @@ h2 {
     border-bottom: none !important
 }
 
-.launch.button.regularizacao {
+.launch.button.editais {
     background: #7C3961
 }
 
-.launch.button.regularizacao:hover {
+.launch.button.editais:hover {
     background: #aC6991
 }
 
@@ -6389,8 +6389,8 @@ span.label {
         background:#147EA1
     }
 
-    #main-menu .main-link.regularizacao:hover a,
-    #main-menu .main-link.regularizacao.opened-parent {
+    #main-menu .main-link.editais:hover a,
+    #main-menu .main-link.editais.opened-parent {
         background: #7c3961
     }
 
@@ -6404,8 +6404,8 @@ span.label {
         background: #289728
     }
 
-    #main-menu .main-link.editais:hover a,
-    #main-menu .main-link.editais.opened-parent {
+    #main-menu .main-link.regularizacao:hover a,
+    #main-menu .main-link.regularizacao.opened-parent {
         background: #feaa15
     }
 
@@ -6465,7 +6465,7 @@ span.label {
         height: 240px
     }
 
-    #main-menu .main-link.regularizacao .submenu>li>a {
+    #main-menu .main-link.editais .submenu>li>a {
         padding-left: 20px;
         font-size: 13px
     }
@@ -6509,8 +6509,8 @@ span.label {
     }
 
     #main-menu .main-link.habitacao .submenu > li > a,
-    #main-menu .main-link.editais .submenu > li >a,
-    #main-menu .main-link.regularizacao .submenu > li > a,
+    #main-menu .main-link.regularizacao .submenu > li >a,
+    #main-menu .main-link.editais .submenu > li > a,
     #main-menu .main-link.servicos .submenu > li > a,
     #main-menu .main-link.entidades .submenu > li > a,
     #main-menu .main-link.concursos .submenu>li>a {
@@ -6528,7 +6528,7 @@ span.label {
         0
     }
 
-    #main-menu .main-link.regularizacao>a {
+    #main-menu .main-link.editais>a {
         color: #7C3961
     }
 
@@ -6809,7 +6809,7 @@ span.label {
         background: rgba(244,64,10,1.0) !important
     }
 
-    .topSlider .flexslider li .flex-caption.regularizacao {
+    .topSlider .flexslider li .flex-caption.editais {
         background: rgba(124,57,97,1.0) !important
     }
 
@@ -6820,7 +6820,7 @@ span.label {
     .topSlider .flexslider li .flex-caption.habitacao {
         background: rgba(29,130,16,1.0) !important
     }
-.topSlider .flexslider li .flex-caption.editais {
+.topSlider .flexslider li .flex-caption.regularizacao {
         background: rgba(254, 170, 21, 1.0) !important
     }
     .topSlider .flexslider li .flex-caption.LightBlue {

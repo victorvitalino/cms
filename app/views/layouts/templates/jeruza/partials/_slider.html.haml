@@ -18,7 +18,7 @@
                   = s.content.html_safe
                 %hr
                   .block-left
-                    %a.sliderLink{:href => "./single.html"} Leia Mais         
+                    = link_to "Leia Mais", content_post_path(s), class: 'sliderLink'  
     .controlWrapper
       %ul.custom-controls
         - slider_each('slider', 4,'DESC') do |s|
