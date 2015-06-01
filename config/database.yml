@@ -8,13 +8,13 @@ default: &default
 
 development:
   <<: *default
-  database: agenda_development
+  database: site_development
 
 
 test:
   <<: *default
-  database: agenda_development
+  database: site_development
 
 production:
   <<: *default
-  database: agenda_development
+  database: site_development
