@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
   mount RedactorRails::Engine => '/redactor_rails'
+
+  get 'site', 'application#site'
+  
   namespace :cms, path: 'conteudo' do 
     root 'pages#index'
     resources :posts, path: 'postagens'

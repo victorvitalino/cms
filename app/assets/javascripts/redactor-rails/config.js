@@ -10,11 +10,11 @@ window.init_redactor = function(){
         // If you want to use plugins, you have add plugins to your
         // application.js and application.css files and uncomment the line below:
         "plugins": ['fullscreen'],
-        "imageUpload":"/site/redactor_rails/pictures?" + params,
-        "imageGetJson":"/site/redactor_rails/pictures",
-        "fileUpload":"/site/redactor_rails/documents?" + params,
-        "fileGetJson":"/site/redactor_rails/documents",
-        "path":"/site/assets/redactor-rails",
+        "imageUpload":"/redactor_rails/pictures?" + params,
+        "imageGetJson":"/redactor_rails/pictures",
+        "fileUpload":"/redactor_rails/documents?" + params,
+        "fileGetJson":"/redactor_rails/documents",
+        "path":"/assets/redactor-rails",
         "css":"style.css",
         "lang":'pt_br'
   });

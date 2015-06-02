@@ -6,7 +6,7 @@ class RedactorRailsDocumentUploader < CarrierWave::Uploader::Base
   storage :file
 
   def store_dir
-    "site/system/redactor_assets/documents/#{model.id}"
+    "system/redactor_assets/documents/#{model.id}"
   end
 
   def extension_white_list
