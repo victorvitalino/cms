@@ -72,6 +72,7 @@
   .link-tel{height: 5px!important}
   .tempp{ max-height: 188px!important; overflow: hidden!important;}
   .bloco-noticia{  max-height: 850px!important;}
+  .noticias-footer p{margin-bottom: 5px!important; font-size: 11px;}
 /*  @media (min-width: 1200px){
   .container {
     max-width: 1200px!important;
