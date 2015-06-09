@@ -70,6 +70,8 @@
   .homeLatestWrapper{padding-bottom: 0px!important;}
   .menu-tel{margin-top: 5px!important}
   .link-tel{height: 5px!important}
+  .tempp{ max-height: 222px!important; overflow: hidden!important;}
+  .bloco-noticia{  max-height: 850px!important;}
 /*  @media (min-width: 1200px){
   .container {
     max-width: 1200px!important;
