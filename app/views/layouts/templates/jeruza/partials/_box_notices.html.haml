@@ -6,11 +6,12 @@
         = image_tag p.thumb if p.thumb?
       .latestHeader
         = link_to "##{p.post_category.name}", content_post_path(p), class: 'council'
-        .latestDate 
+        .latestDate
           = p.created_at.strftime('%d/%m/%Y')
       %h3
         = link_to p.title, content_post_path(p)
       %p
-        = p.content.html_safe
+        .tempp
+          = p.content.html_safe
       %p.bt-noticia
         = link_to 'Leia Mais', content_post_path(p), class: 'sliderLink'
