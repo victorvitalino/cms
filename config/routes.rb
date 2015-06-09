@@ -4,16 +4,16 @@ Rails.application.routes.draw do
 
   get 'site', to: 'application#site'
   
-  namespace :cms, path: 'conteudo' do 
-    root 'pages#index'
-    resources :posts, path: 'postagens'
-    resources :post_categories, path: 'postagem_categorias'
+#  namespace :cms, path: 'conteudo' do 
+#    root 'pages#index'
+#    resources :posts, path: 'postagens'
+#    resources :post_categories, path: 'postagem_categorias'
     
-    resources :pages, path: 'paginas'
-    resources :page_categories, path: 'pagina_categorias'
+#    resources :pages, path: 'paginas'
+#    resources :page_categories, path: 'pagina_categorias'
 
-    resources :users, path: 'usuario'
-  end
+#    resources :users, path: 'usuario'
+#  end
 
   namespace :content, path: '/' do 
     root 'home#index'
@@ -26,11 +26,11 @@ Rails.application.routes.draw do
        
   end
 
-  namespace :morarbem, path: '/morarbem' do
+#  namespace :morarbem, path: '/morarbem' do
 
-    get 'rii', to: 'rii#index'
-    get 'rie', to: 'rie#index'
+#    get 'rii', to: 'rii#index'
+#    get 'rie', to: 'rie#index'
 
-  end
+#  end
 
 end
