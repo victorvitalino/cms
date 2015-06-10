@@ -153,32 +153,27 @@
                         = link_nav_to 'Habilitação de Parcelamentos Informais Consolidados', 'parcelamentos_informais'
               %li.entidades.main-link
                 %a{:href => "#"} Entidades
-                %ul.submenu
-                  %li.first
-                    %a{:href => "#", :class => "linkD"} Informações
-                    %ul.submenu-item
-                      %li
-                        = link_nav_to 'Sobre o programa', 'Associacoes'
-                      %li
-                        = link_nav_to 'Entidades e associações cadastradas', 'Associacoes'
-                      %li
-                        = link_nav_to 'Pré-requisitos para cadastramento de entidade / associação', 'Associacoes'
-                      %li
-                        = link_nav_to 'Manual da entidade', 'Associacoes'
-                  %li.first
-                    %a{:href => "#", :class => "linkD"} Atendimento
-                    %ul.submenu-item
-                      %li
-                        = link_nav_to 'Cadastro', 'Associacoes'
-                      %li
-                        = link_nav_to 'Acesso a Entidades', 'Associacoes'
-                      %li
-                        = link_nav_to 'Agendar / Reagendar atendimento', 'Associacoes'
+                
               %li.servicos.main-link
                 %a{:href => "#"} Serviços
 
               %li.editais.main-link
                 %a{:href => "#"} Editais
+                %ul.submenu
+                  %li.first
+                    %a{:href => "#", :class => "linkD"} Licitações
+                    %ul.submenu-item
+                      %li
+                        = link_nav_to 'Equipamentos e Materiais', 'Editais'
+                      %li
+                        = link_nav_to 'Obras e Serviços', 'Editais'
+                  %li.first
+                    %a{:href => "#", :class => "linkD"} Entidades
+                    %ul.submenu-item
+                      %li
+                        = link_nav_to 'Credenciamento', 'Editais'
+                      %li
+                        = link_nav_to 'Chamamento', 'Editais'
 
                 %li.concursos.main-link
                   %a{:href => "#"} Concursos
