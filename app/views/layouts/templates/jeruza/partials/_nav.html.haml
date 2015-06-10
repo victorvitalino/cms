@@ -87,8 +87,8 @@
           .logo.mobilewrap
             %a.mobile.menubutton{:alt => "ACC menu button", :href => "#"}
             %a.link-logo{:href => "#"}
-              = image_tag('jeruza/img/logo_codhab.png', width: '132', class: 'nomobile')
-              = image_tag('jeruza/img/logo_codhab.png', width: '185', class: 'mobile')
+              = link_to image_tag('jeruza/img/logo_codhab.png', width: '132', class: 'nomobile'), content_root_path
+              = link_to image_tag('jeruza/img/logo_codhab.png', width: '185', class: 'mobile'), content_root_path
           %nav#main-menu
             %ul
               %li.habitacao.main-link
@@ -137,9 +137,9 @@
                       %li
                         = link_nav_to 'Andamento de sua localidade', 'regularizacao'
                       %li
-                        = link_nav_to 'Critérios de Habilitação', 'regularizacao'
+                        = link_nav_to 'Critérios de Habilitação - Regularização em Cidades Consolidadas', 'regularizacao'
                       %li
-                        = link_nav_to 'Documentos Necessários', 'regularizacao'
+                        = link_nav_to 'Documentos Necessários  - Regularização em Cidades Consolidadas', 'regularizacao'
                   %li.first
                     %a{:href => "#"} Parcelamentos Informais
                     %ul.submenu-item
