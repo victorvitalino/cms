@@ -172,24 +172,11 @@
                         = link_nav_to 'Acesso a Entidades', 'Associacoes'
                       %li
                         = link_nav_to 'Agendar / Reagendar atendimento', 'Associacoes'
+              %li.servicos.main-link
+                %a{:href => "#"} Serviços
 
               %li.editais.main-link
                 %a{:href => "#"} Editais
-                %ul.submenu
-                  %li.first
-                    %a{:href => "#", :class => "linkD"} Licitações
-                    %ul.submenu-item
-                      %li
-                        = link_nav_to 'Equipamentos e Materiais', 'Editais'
-                      %li
-                        = link_nav_to 'Obras e Serviços', 'Editais'
-                  %li.first
-                    %a{:href => "#", :class => "linkD"} Entidades
-                    %ul.submenu-item
-                      %li
-                        = link_nav_to 'Credenciamento', 'Editais'
-                      %li
-                        = link_nav_to 'Chamamento', 'Editais'
 
                 %li.concursos.main-link
                   %a{:href => "#"} Concursos
