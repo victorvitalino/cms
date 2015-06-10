@@ -73,6 +73,10 @@
   .tempp{ max-height: 188px!important; overflow: hidden!important;}
   .bloco-noticia{  max-height: 850px!important;}
   .noticias-footer p{margin-bottom: 5px!important; font-size: 11px;}
+  .linkD:hover{text-decoration: none!important;cursor:initial!important;}
+  .sliderp p{display:none;cursor: pointer!important;text-align: justify!important;}
+  .sliderp p a:hover{text-decoration: none!important;}
+  .sliderp p:nth-of-type(2){display: block!important;}
 /*  @media (min-width: 1200px){
   .container {
     max-width: 1200px!important;
