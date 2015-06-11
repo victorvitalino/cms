@@ -55,8 +55,6 @@
                         = link_nav_to 'Notícias', 'geral'
                       %li
                         = link_nav_to 'Vídeos', 'geral'
-                      %li
-                        = link_nav_to 'Mídias Sociais', 'geral'
               %li
                 = link_nav_to 'Dúvidas Frequentes', 'geral'
               %li
@@ -117,15 +115,13 @@
                         %a{:href => "http://www.morarbem.df.gov.br/Consultas/Habilitados?projeto=1", :target => "_BLANK"} Lista de Habilitados RII
                       %li
                         %a{:href => "http://www.morarbem.df.gov.br/Consultas/Habilitados?projeto=2", :target => "_BLANK"} Lista de Habilitados RIE
-                      %li
-                        %a{:href => "http://www.morarbem.df.gov.br/Consultas/Desistentes", :target => "_BLANK"} Lista de Convocados não Habilitados
                   %li.first
                     %a{:href => "#", :class => "linkD"} Convocados Não Habilitados
                     %ul.submenu-item
                       %li.first
                         = link_nav_to 'O que são convocados não habilitados?', 'habitacao'
                       %li
-                        = link_nav_to 'Lista de convocados não habilitados', 'habitacao'
+                        %a{:href => "http://www.morarbem.df.gov.br/Consultas/Desistentes", :target => "_BLANK"} Lista de Convocados não Habilitados
               %li.regularizacao.main-link
                 %a{:href => "#"} Regularização
                 %ul.submenu
