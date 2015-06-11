@@ -4057,7 +4057,7 @@ a {
 
 #top-nav nav ul ul
 a {
-    border-bottom: 1px dotted #CCC !important;
+    border-bottom: 1px dotted #CCC;
     color: #303236 !important;
     display: inline-block;
     line-height: 1.4em;

@@ -68,19 +68,24 @@
                     %a{:href => "#", :class => "link-tel", :class => "linkD linktamanho"} Telefone
                     %ul
                       %li
-                        %a{:href => "#", :class => "linkD"} 156 - A Central Telefônica tem profissionais preparados para ouvir e registrar as suas demandas. Ligação gratuita para telefone fixo.
+                        %a{:href => "#", :class => "linkD borders"} 156 - A Central Telefônica tem profissionais preparados para ouvir e registrar as suas demandas. Ligação gratuita para telefone fixo.
                   %li.first.menu-tel
                     %a{:href => "#", :class => "linkD"} Postos de Atendimento
                     %ul
                       %li
-                        %a{:href => "#", :class => "linkD"} Setor Comercial Sul, Quadra 06, Lotes 13/14, Bloco A, 5º Andar - Edifício SEDHAB
+                        %a{:href => "#", :class => "linkD borders"} Setor Comercial Sul, Quadra 06, Lotes 13/14, Bloco A, 5º Andar - Edifício SEDHAB
                   %li.first.menu-tel
                     %a{:href => "#", :class => "linkD linktamanho"} Ouvidoria
                     %ul
                       %li
-                        %a{:href => "www.e-sic.df.gov.br"} e-SIC
-                      %li
-                        %a{:href => "http://www.ouvidoria.df.gov.br/espaco-do-ouvidor/lista-de-contatos.html"} Presencial
+                        %a{:href => "www.e-sic.df.gov.br"}  e-SIC
+                      %li{:class => "menu-bold borders linkD toplink"}
+                        Ouvidoria Central
+                        %a{:href => "#", :class => "linkD borders"}Telefone 162
+                      %li{:class => "menu-bold borders linkD toplink"}
+                        Ouvidoria CODHAB
+                        %a{:href => "#", :class => "linkD borders"}Telefone: 3214-1843
+
     #main-menu-bar{:role => "banner", :tabindex => "0"}
       .container
         .sixteen.columns
@@ -183,6 +188,6 @@
                         %li
                           = link_nav_to 'O que são?', 'Concursos'
                         %li
-                          = link_nav_to 'Logo CODHAB', 'Concursos'
+                          = link_nav_to 'Marca CODHAB', 'Concursos'
                         %li
                           = link_nav_to 'Projetos Habitacionais', 'Concursos'
