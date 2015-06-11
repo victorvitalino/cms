@@ -17,4 +17,4 @@ test:
 
 production:
   <<: *default
-  database: agenda_development
+  database: site_development

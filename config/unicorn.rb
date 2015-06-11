@@ -17,7 +17,7 @@ listen "/tmp/unicorn.cms.sock"
 listen "/tmp/unicorn.cms.sock"
 # Number of processes
 
-worker_processes 8
+worker_processes 4
 
 # Time-out
 timeout 30
