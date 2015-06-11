@@ -6733,7 +6733,7 @@ span.label {
     }
 
     a.mobile.menubutton {
-        background-image: url("../img/menu-button.png");
+        background-image: url("/assets/img/menu-button.png");
         background-size: 50px 100px;
         background-position: 0 0;
         background-repeat: no-repeat;
@@ -6749,7 +6749,7 @@ span.label {
     }
 
     a.mobile.menubutton:hover {
-        background: url("../img/menu-button.png") 0 -50px / 50px 100px no-repeat
+        background: url("/assets/img/menu-button.png") 0 -50px / 50px 100px no-repeat
     }
 
     .social .follow-company {
