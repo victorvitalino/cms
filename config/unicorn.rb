@@ -15,9 +15,9 @@ stdout_path "/var/www/cms/log/unicorn.log"
 # Unicorn socket
 listen "/tmp/unicorn.cms.sock"
 listen "/tmp/unicorn.cms.sock"
-
 # Number of processes
-worker_processes 4
+
+worker_processes 8
 
 # Time-out
 timeout 30
