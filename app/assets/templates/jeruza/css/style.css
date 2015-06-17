@@ -2648,7 +2648,7 @@ img {
 }
 
 .latestDate {
-    background: url(http://stage.acc.bl.ms/common/acc/images/clock.png) no-repeat 90px 8px;
+    background: url('../img/clock.png') no-repeat 90px 8px;
     color: #8397A3;
     float: right;
     font-size: 12px;
@@ -2913,7 +2913,7 @@ a {
 .latestDate {
     margin: -5px 0px 0 0;
     color: #fff;
-    background-image: url(http://stage.acc.bl.ms/common/acc/images/clock-white.png) !important;
+    background-image: url('../img/clock-white.png') !important;
     background-repeat: no-repeat !important;
     background-position: 90px 8px !important;
     background-size: 19px 20px !important
