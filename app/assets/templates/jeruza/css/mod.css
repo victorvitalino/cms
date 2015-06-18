@@ -84,3 +84,21 @@
   margin-bottom: 6px!important;
   border-bottom: 0 !important;border: none!important; color: #303236 !important;}
   .borders{border:none!important;}
+
+
+  /*slider info*/
+  .tab-fundo{display:none;background-image: url('../../../../estadio.png');background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center top;
+    background-attachment: fixed; width: 100%;}
+  .s-info{margin:0 auto;display: none;}
+  #maskinfo{margin:0 auto;}
+  .tab-mes{text-align:center; height: 50px; margin:0 auto;margin-top: 65px;}
+  .tab-mes span{width: 30px; height: 20px; cursor: pointer; background-color: rgb(0, 74, 119); margin-left: 20px;  border-radius: 5px;}
+  .tab-mes span:hover{background-color:rgb(0, 154, 255)}
+  .bullet {font-weight: bold; font-family:'Open Sans'; color: #fff; padding: 10px;}
+  .teste{background: none!important;height: auto!important;border: none!important;box-shadow: none!important;}
+  .conquistatxt{color:#fff; font-family:'Open Sans'; text-align: center;}
+  .conquistatg{padding-top: 30px;margin-bottom: -5px!important;}
+  .conquistasubt{margin-bottom: 5px;}
+  .conq-just{text-align: justify!important;}
