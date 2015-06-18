@@ -87,7 +87,7 @@
 
 
   /*slider info*/
-  .tab-fundo{display:none;background-image: url('../../../../estadio.png');background-repeat: no-repeat;
+  .tab-fundo{display:block;background-image: url('../../../../estadio.png');background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center top;
     background-attachment: fixed; width: 100%;}
