@@ -184,6 +184,13 @@
                         = link_nav_to 'Credenciamento', 'Editais'
                       %li
                         = link_nav_to 'Chamamento', 'Editais'
+                  %li.first
+                    %a{:href => "#", :class => "linkD"} Pregões
+                    %ul.submenu-item
+                      %li
+                        = link_nav_to 'Pregão Eletrônico', 'Editais'
+                      %li
+                        = link_nav_to 'Pregão Presencial', 'Editais'
 
                 %li.concursos.main-link
                   %a{:href => "#"} Concursos
