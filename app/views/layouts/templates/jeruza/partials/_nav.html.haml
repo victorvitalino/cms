@@ -103,6 +103,8 @@
                         = link_nav_to 'Documentos Necessários', 'habitacao'
                       %li
                         = link_nav_to 'Agendar / Reagendar Atendimento', 'habitacao'
+                      %li
+                        %a{:href => "http://www.morarbem.df.gov.br/Consultas/Inscritos?projeto=003", :target => "_BLANK"} Lista de Inscritos
                   %li.first
                     %a{:href => "#", :class => "linkD"} Relação de Habilitados
                     %ul.submenu-item
@@ -150,8 +152,14 @@
                       %li
                         = link_nav_to 'Habilitação de Parcelamentos Informais Consolidados', 'parcelamentos_informais'
               %li.entidades.main-link
-                = link_to 'Entidades', "http://www.codhab.df.gov.br/posts/2"
-
+                %a{:href => "#"} Entidades
+                %ul.submenu
+                  %li.first
+                    %ul.submenu-item
+                      %li
+                        %a{:href => "http://www.morarbem.df.gov.br/Consultas/RelacaoCooperativa?ano=2014", :target => "_BLANK"} Lista por Entidade 2014
+                      %li
+                        %a{:href => "http://www.morarbem.df.gov.br/Cooperativas/CooperativaCredenciada", :target => "_BLANK"} Cooperativas Cadastradas 
               %li.servicos.main-link
                 %a{:href => "#"} Serviços
                 %ul.submenu
