@@ -2798,7 +2798,7 @@ li {
 }
 
 .topSlider .flex-caption {
-    background: url(http://stage.acc.bl.ms/common/acc/images/slider-bkgd.png) repeat;
+    background: url('../../../../slider-bkgd.png') repeat;
     color: #FFF;
     font-size: 18px;
     left: 50%;
