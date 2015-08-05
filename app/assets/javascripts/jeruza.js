@@ -2,7 +2,7 @@
 //= require jeruza/js/jquery.flexslider
 //= require jeruza/js/slider
   jQuery(document).ready(function($){
-    var mes = 'Mai';
+    var mes = 'Jul';
     var botao = '';
     var current = mes;
     $('#'+ mes).css('display','block');
