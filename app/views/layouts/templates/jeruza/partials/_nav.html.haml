@@ -195,6 +195,12 @@
                         = link_nav_to 'Pregão Eletrônico', 'Editais'
                       %li
                         = link_nav_to 'Pregão Presencial', 'Editais'
+                  %li.second
+                    %a{:href => "#", :class => "linkD"} Convite
+                    %ul.submenu-item
+                      %li
+                        %a{'href': "#{content_page_path('convite')}"}
+                          Editais de convite
 
                 %li.concursos.main-link
                   %a{:href => "#"} Concursos
